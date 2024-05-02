@@ -2,10 +2,10 @@
 const { test, expect } = require('@playwright/test');
 
 test('Test 1 has title', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
+  await page.goto('https://ecommerce-playground.lambdatest.io/');
 
   // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Playwright/);
+  await expect(page).toHaveTitle(/Your Store/);
 });
 test('Test 2 get started link', async ({ page }) => {
   await page.goto('https://playwright.dev/');
