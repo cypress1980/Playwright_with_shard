@@ -1,7 +1,7 @@
 import { test } from "@playwright/test";
 test("Browser Context example", async ({ browser }) => {
   
-  //First Context - Open Page in New Browser
+  //First Context - Open Page in the incognito Browser
   const firstContext = await browser.newContext();
   const firstPage = await firstContext.newPage();
   await firstPage.goto("https://automationexercise.com/login");
@@ -11,7 +11,7 @@ test("Browser Context example", async ({ browser }) => {
   await firstPage.locator('input[placeholder="Password"]').fill("Test@1234");
   await firstPage.locator('button[data-qa="login-button"]').click();
 
-  //Second Context --  Open Page in New Browser
+  //Second Context --  Open Page in the incognito Browser
   const secondContext = await browser.newContext();
   const secondPage = await secondContext.newPage();
   await secondPage.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/login");
@@ -20,7 +20,7 @@ test("Browser Context example", async ({ browser }) => {
   await secondPage.locator('//input[@id="input-password"]').fill("Lambda123");
   await secondPage.locator('//input[@value="Login"]').click();
 
-  //Third Context --  Open Page in New Browser
+  //Third Context --  Open Page in the incognito Browser
   const thirdContext = await browser.newContext();
   const thirdPage = await thirdContext.newPage();
   await thirdPage.goto("https://automationexercise.com/login");
