@@ -11,7 +11,7 @@ test("Browser Context example", async ({ browser }) => {
   await firstPage.locator('input[placeholder="Password"]').fill("Test@1234");
   await firstPage.locator('button[data-qa="login-button"]').click();
 
-  //Second Context --  Open Page in New Browser
+  //Second Context --  Open Page in New Browser --1
   const secondContext = await browser.newContext();
   const secondPage = await secondContext.newPage();
   await secondPage.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/login");
