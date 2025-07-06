@@ -32,6 +32,10 @@ jobs:
         name: blob-report
         path: blob-report
         retention-days: 1
+        if-no-files-found: warn
+        compression-level: 6
+        overwrite: true
+        include-hidden-files: false
 
   merge-reports:
     # Merge the reports and Generate the Final report
