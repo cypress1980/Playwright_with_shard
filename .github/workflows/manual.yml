@@ -11,7 +11,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        shard: [1_4, 2_4,3/_4,4_4]
+        shard: [1_4, 2_4,3_4,4_4]
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-node@v4
