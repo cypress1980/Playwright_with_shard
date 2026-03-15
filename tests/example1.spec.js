@@ -98,7 +98,7 @@ test('Test 10(TF #1 , TS #10) get started link', async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
   console.log ("TF #1 , TS #10")
 });
-test('Test 10(TF #1 , TS #11) get started link', async ({ page }) => {
+test('Test 11(TF #1 , TS #11) get started link', async ({ page }) => {
   await page.goto('https://playwright.dev/');
 
   // Click the get started link.
@@ -108,7 +108,7 @@ test('Test 10(TF #1 , TS #11) get started link', async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
   console.log ("TF #1 , TS #11")
 });
-test('Test 10(TF #1 , TS #12) get started link', async ({ page }) => {
+test('Test 12(TF #1 , TS #12) get started link', async ({ page }) => {
   await page.goto('https://playwright.dev/');
 
   // Click the get started link.
