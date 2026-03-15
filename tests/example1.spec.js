@@ -78,26 +78,26 @@ test('Test 8(TF #1 , TS #8) get started link', async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
   console.log ("TF #1 , TS #8")
 });
-// test('Test 9(TF #1 , TS #9) get started link', async ({ page }) => {
-//   await page.goto('https://playwright.dev/');
+test('Test 9(TF #1 , TS #9) get started link', async ({ page }) => {
+  await page.goto('https://playwright.dev/');
 
-//   // Click the get started link.
-//   await page.getByRole('link', { name: 'Get started' }).click();
+  // Click the get started link.
+  await page.getByRole('link', { name: 'Get started' }).click();
 
-//   // Expects page to have a heading with the name of Installation.
-//   await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
-//   console.log ("TF #1 , TS #9")
-// });
-// test('Test 10(TF #1 , TS #10) get started link', async ({ page }) => {
-//   await page.goto('https://playwright.dev/');
+  // Expects page to have a heading with the name of Installation.
+  await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
+  console.log ("TF #1 , TS #9")
+});
+test('Test 10(TF #1 , TS #10) get started link', async ({ page }) => {
+  await page.goto('https://playwright.dev/');
 
-//   // Click the get started link.
-//   await page.getByRole('link', { name: 'Get started' }).click();
+  // Click the get started link.
+  await page.getByRole('link', { name: 'Get started' }).click();
 
-//   // Expects page to have a heading with the name of Installation.
-//   await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
-//   console.log ("TF #1 , TS #10")
-// });
+  // Expects page to have a heading with the name of Installation.
+  await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
+  console.log ("TF #1 , TS #10")
+});
 // test('Test 11(TF #1 , TS #11) get started link', async ({ page }) => {
 //   await page.goto('https://playwright.dev/');
 
